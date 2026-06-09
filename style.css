@@ -1,0 +1,59 @@
+body{
+    font-family: cursive;
+    margin: 0;
+    padding: 20px;
+}
+
+.card{
+    height: 90px;
+    width: 70px;
+    background-color: blueviolet;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Common style for floating buttons */
+.addcard,
+.removecard{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+/* Add Button */
+.addcard{
+    background-color: rgb(20, 130, 3);
+    bottom: 90px;
+}
+
+/* Remove Button */
+.removecard{
+    background-color: orangered;
+    bottom: 20px;
+}
+
+/* Hover Effect */
+.addcard:hover,
+.removecard:hover{
+    transform: scale(1.1);
+}
